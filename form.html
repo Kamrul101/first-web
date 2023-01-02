@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+</head>
+
+<body>
+    
+    <main>
+
+        <div class="container">
+            <h1>Sign Up Form</h1>
+            <!-- <hr> -->
+            <form action="form.php">
+                <label for="name">First Name:</label><br>
+                <input type="text" placeholder="Your first name" name="name"><br>
+                <label for="name">Surname :</label><br>
+                <input type="text" placeholder="Your surname"><br>
+                <label for="email">Email :</label><br>
+                <input type="email" placeholder="Enter your email" name="email" required><br>
+                <label for="psw">Password :</label><br>
+                <input type="password" placeholder="Enter new password" name="psw" required><br>
+                <label for="psw-repeat">Repeat Password :</label><br>
+                <input type="password" placeholder="Retype password" name="psw-repeat" required><br>
+                <label for="date">Date of birth:</label><br>
+                <input type="date" name="date"><br>
+                <label for="male">
+                    <input type="radio" value="m" name="gender" id="M">Male</label>
+                <label for="female">
+                    <input type="radio" value="f" name="gender" id="F">Female </label>
+                <label for="other">
+                    <input type="radio" value="o" name="gender" id="O">Other</label><br>
+
+                <label>
+                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                </label>
+
+                <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+                <div class="clearfix">
+                    <button type="button"  class="cancelbtn" >Cancel</button>
+                    <button type="submit" class="signupbtn">Sign Up</button>
+                    <button type="reset" class="resetbtn">Reset</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
